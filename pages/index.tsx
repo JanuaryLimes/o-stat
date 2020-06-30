@@ -8,6 +8,7 @@ const IndexPage = () => (
       <Link href="/about">
         <a>About test...2</a>
       </Link>
+      test
     </p>
   </Layout>
 );
