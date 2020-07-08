@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { createWorker } from 'tesseract.js';
 import { ChangeEvent, useState } from 'react';
+import { ImageWithRect } from '../components/ImageWithRect';
 
 const IndexPage = () => {
   const [fileSrc, setFileSrc] = useState<string | undefined>(undefined);
@@ -37,7 +38,7 @@ const IndexPage = () => {
       <div>
         <p>obraz</p>
         <input type="file" onChange={onFileSelect}></input>
-        <img src={fileSrc}></img>
+        <ImageWithRect fileSrc={fileSrc} />
       </div>
       <div>
         <p>wynik</p>
